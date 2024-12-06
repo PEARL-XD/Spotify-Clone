@@ -37,6 +37,7 @@ const shuffle = document.querySelector("#shuffle");
 const loop = document.querySelector(".loop");
 const loopsame = document.querySelector(".loop-same");
 const album_btn = document.querySelector('.album-btn')
+const signUp = document.querySelector('#bottomsignup')
 
 audio.src = ""; // Initialize audio source
 
