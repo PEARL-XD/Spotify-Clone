@@ -1,0 +1,674 @@
+* {
+  font-family: CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl,
+    CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial,
+    "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+  text-transform: capitalize;
+}
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  display: none;
+
+}
+/* NAV START ................ */
+.invert {
+  filter: invert(1);
+}
+.grey {
+  fill: gray;
+  width: 30px;
+  margin-left: 10px;
+}
+.browse {
+  fill: gray;
+  width: 30px;
+  margin-left: 10px;
+}
+.browse:hover {
+  fill: white;
+}
+nav {
+  height: 5.7vh;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 50.23px;
+}
+nav .logo {
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.hh {
+  border: none;
+  border-radius: 50%;
+  padding: 9px;
+  background-color: rgb(30, 30, 30);
+}
+.home {
+  height: 24px;
+}
+.home-btn{
+  padding: 9px;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+}
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 490px;
+}
+.searchbar svg {
+  cursor: pointer;
+}
+.ss {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 30px;
+  width: 430px;
+  height: 40px;
+  gap: 10px;
+  padding: 5px;
+  background-color: rgb(30, 30, 30);
+}
+.ss input {
+  font-size: 16px;
+  /* background-color: rgb(30, 30, 30); */
+  background-color: transparent;
+  border: none;
+  /* margin-right: 27%; */
+  outline: none;
+  color: white;
+  width: 75%;
+}
+input[type="text"]:focus::placeholder {
+  opacity: 0; /* Hide placeholder when focused */
+}
+.ss:hover {
+  border: 1px solid rgb(30, 30, 30);
+  background-color: rgb(48, 48, 48);
+  cursor: pointer;
+}
+.ss:focus-within {
+  border: 2px solid white;
+  cursor: text;
+}
+.ss:hover svg.grey {
+  fill: white; /* Change color of the first SVG on hover */
+}
+.space {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  border: 1px solid white;
+  height: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.login {
+  cursor: pointer;
+  width: 108px;
+  height: 48px;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+}
+.login:hover {
+  border: 1.5px solid black;
+}
+.sign {
+  cursor: pointer;
+  color: gray;
+  background-color: black;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+  margin-right: 25px;
+}
+.sign:hover {
+  color: white;
+}
+
+.dropdown {
+  position: fixed;
+  right: 9px;
+  top: 75px;
+  justify-content: space-around;
+  z-index: 100;
+  border: none;
+  background-color: white;
+  height: 80px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  background-color: #282828;
+  display: none;
+}
+.dropdown button {
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  background-color: #282828;
+}
+
+/* NAV FINISH.......... */
+
+/* lEFT ASIDE START */
+.left {
+  width: 25vw;
+  min-width: 300px;
+  border-radius: 8px;
+  margin-left: 5px;
+  color: white;
+  background-color: #121212;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.lib {
+  margin-left: 5px;
+  height: 24px;
+  width: 24px;
+}
+.lefttopcont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.legal {
+  padding-left: 20px;
+  color: grey;
+}
+.legal div {
+  word-spacing: 15px;
+  line-height: 28px;
+  font-size: 13px;
+}
+.legal h3 {
+  color: white;
+}
+.legal button {
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  background-color: black;
+  color: whitesmoke;
+  padding: 6px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.colcontupper {
+  margin: auto;
+  background-color: rgb(30, 30, 30);
+  border-radius: 12px;
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+  height: 125px;
+  padding: 5px 20px;
+  padding-bottom: 20px;
+}
+.colcontlower {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(30, 30, 30);
+  border-radius: 12px;
+  padding: 10px;
+  width: 90%;
+  padding: 5px 20px;
+  padding-bottom: 20px;
+}
+.colbutton {
+  /* margin-top: 20px; */
+  border: none;
+  width: 125px;
+  height: 32px;
+  border-radius: 20px;
+}
+/* RIGHT MAIN START */
+.right {
+  overflow-y: scroll;
+  width: 75vw;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #121212;
+  color: whitesmoke;
+  height: 83vh;
+  scroll-behavior: smooth;
+}
+/* Style the entire scrollbar */
+.right::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+}
+
+/* Style the scrollbar track (the background area) */
+.right::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark background for the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.right::-webkit-scrollbar-thumb {
+  background-color: #000; /* Black color for the thumb */
+  border-radius: 2px; /* Rounded corners for the thumb */
+}
+
+/* Style the thumb when hovered (optional effect) */
+.right::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color when hovered */
+}
+
+.right p {
+  margin-left: 20px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.featured {
+  color: whitesmoke;
+  padding: 16px;
+  display: flex;
+  gap: 25px;
+}
+
+.foot {
+  padding: 10px;
+  display: flex;
+}
+.foot div {
+  line-height: 35px;
+  height: 300px;
+  width: 230px;
+  padding: 10px;
+  color: gray;
+}
+.footsvg {
+  width: 32px;
+  padding: 10px;
+}
+button {
+  cursor: pointer;
+}
+#copy {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  color: rgb(190, 183, 183);
+}
+.bottomline {
+  width: 90%;
+  margin: auto;
+  background-color: grey;
+  height: 1px;
+  margin-bottom: 40px;
+}
+.add {
+  font-weight: 700;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  height: 8vh;
+  width: 100%;
+  background: linear-gradient(45deg, #af2997, #5087ed); /* Two-color gradient */
+  background-size: 400% 400%; /* Makes the gradient animate smoothly */
+  animation: breathe 20s ease-in-out infinite; /* Slower, smooth transition */
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addleft {
+  margin-left: 15px;
+}
+.addright {
+  margin-right: 15px;
+}
+.addright button {
+  width: 150px;
+}
+/* Keyframes for the breathing effect between two colors */
+@keyframes breathe {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.playbtn {
+  width: 50px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  right: 20px;
+  bottom: 55px;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 210px;
+  height: 210px;
+}
+.card {
+  position: relative;
+  width: 220px;
+  color: gray;
+  cursor: pointer;
+}
+.card:hover .playbtn {
+  /* background-color: rgb(18, 17, 17); */
+  opacity: 1;
+  transform: translateY(0px);
+  cursor: pointer;
+}
+.foot div span,
+.foot svg {
+  cursor: pointer;
+}
+.invert {
+  cursor: pointer;
+}
+#userlog {
+  border: none;
+  border-radius: 50%;
+  /* padding: 20px; */
+  width: 45px;
+  height: 45px;
+  background-color: #509bf5;
+  font-size: 18px;
+  margin: auto;
+}
+
+.rtoggle {
+  display: flex;
+  flex-direction: column;
+}
+#liked{
+  width: 50px;
+  margin-left: 10px;
+}
+.liked {
+  background: linear-gradient(
+    to bottom,
+    #463289,
+    #2a1e51
+  ); /* Gradient from pink to orange */
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 70px;
+  font-weight: 800;
+  border: none;
+}
+
+/* Style for the image inside .liked */
+.liked img {
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.albumbtn {
+  background-color: #21173f;
+  background: linear-gradient(to bottom, #21173f, #1a152ca7);
+  position: sticky;
+  top: 0px;
+}
+.album-btn {
+  width: 65px;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+.album-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in;
+}
+.rr {
+  display: none;
+}
+.songs {
+  overflow: scroll;
+}
+.song {
+  box-sizing: border-box;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 97%;
+  margin-left: 3%;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+.song:hover {
+  background-color: rgb(39, 39, 39);
+  border-radius: 4px;
+}
+.song img {
+  width: 38px;
+  border-radius: 5px;
+}
+.titleflex {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(156, 155, 155);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.duration-icon {
+  width: 20px;
+  fill: gray;
+}
+.title-line {
+  border: 1px solid rgb(65, 65, 65);
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#folders {
+  margin-top: 30px;
+}
+.folder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  margin: 0px 15px;
+  cursor: pointer;
+  padding: 5px 3px;
+}
+.folder:hover {
+  background-color: rgb(39, 39, 39);
+  border-radius: 5px;
+}
+.folder img {
+  width: 50px;
+  border-radius: 5px;
+}
+.index {
+  width: 34px;
+  text-align: end;
+}
+.try {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.try::-webkit-scrollbar {
+  width: 6px; /* Width of the vertical scrollbar */
+}
+
+/* Style the scrollbar track (the background area) */
+.try:hover:-webkit-scrollbar-track {
+  background: #4c4c4c; /* Dark background for the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+.try::-webkit-scrollbar-thumb {
+  background-color: #5b5858; /* Black color for the thumb */
+  border-radius: 2px; /* Rounded corners for the thumb */
+}
+
+/* Style the thumb when hovered (optional effect) */
+.try::-webkit-scrollbar-thumb:hover {
+  background-color: #3d3d3d; /* Darker color when hovered */
+}
+
+/* PLAY BAR */
+.playbar {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 8.6vh;
+  border-radius: 4px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexplay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 10vw;
+}
+#song_name{
+  font-size: 15px;
+}
+.playbarsvg {
+  width: 19px;
+  fill: #b3b3b3;
+}
+
+.playpause {
+  width: 32px;
+  display: none;
+}
+.play{
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  width: 22px;
+}
+.middle-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.middle-upper {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+  align-items: center;
+}
+#volume {
+  width: 16px;
+}
+.right-bar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  fill: gray;
+}
+
+
+.middle-lower {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+  color: #9d9c9c;
+  font-weight: 500;
+}
+
+#volume-seek {
+  height: 4px;
+  width: 100px;
+  margin-right: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+#volume-seek:hover::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px; /* Thumb size */
+  height: 14px;
+  background: white; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+#seekbar {
+  width: 600px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+#seekbar:hover::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px; /* Thumb size */
+  height: 14px;
+  background: white; /* Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes the default thumb style in WebKit browsers */
+  appearance: none;
+  width: 0; /* Make the thumb disappear */
+  height: 0; /* Make the thumb disappear */
+  background: transparent; /* Optional: make the thumb's background transparent */
+  border: none; /* Optional: removes any border from the thumb */
+}
+.loop{
+  width: 17px;
+}
+.loop-same{
+  width: 17px;
+  display: none;
+}
+.shuffle{
+  width: 17px;
+}
